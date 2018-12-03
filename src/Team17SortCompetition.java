@@ -1,10 +1,8 @@
-public class Team17SortCompetition {
-
-    public static void challengeOne(int [] arr)
+public class Team17SortCompetition extends SortCompetition
+{
+    public int challengeOne(int[] arr)
     {
-        arr = new int[10000];
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = (Math.random() * 10000) + 1;
-        }
+        SortingAlg.quicksort(arr, 0, arr.length - 1);
+        return (SortingAlg.median(arr));
     }
 }
