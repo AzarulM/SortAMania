@@ -4,11 +4,11 @@ public class Runner {
 
         SortCompetition team17 = new Team17SortCompetition();
 
-        int [] randIntsArr = randomIntsArr(10000);
-        String[] randStringsArr = randomStringArr(10000, 5);
+        int [] randIntArr = SortingAlg.randIntArr(10000);
+        String[]randomStringArr = SortingAlg.randomStringArr(10000,5);
 
         System.out.println("Unsorted");
-        printArr(randIntArr);
+        SortingAlg.printArr(randIntArr);
         
         long time = System.currentTimeMillis();
         int median = team17.challengeOne(randIntArr);
@@ -17,6 +17,6 @@ public class Runner {
         System.out.println("Median equals: " + median);
 
         System.out.println("Sorted");
-        printArr(randIntsArr);
+        SortingAlg.printArr(randIntArr);
     }
 }
