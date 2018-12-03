@@ -1,5 +1,5 @@
 
-public abstract class SortCompetition implements Comparable <Team17SortCompetition> {
+public abstract class SortCompetition implements Comparable <SortCompetition> {
 	
 	
 	
