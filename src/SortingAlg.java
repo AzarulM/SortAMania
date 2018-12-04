@@ -42,6 +42,18 @@ public class SortingAlg
         arr[i] = arr[j];
         arr[j] = temp;
     }
+    public static String randomString(int length)
+    {
+        String str = "";
+        int i = 0;
+        while (i < length)
+        {
+            char c = (char) ((Math.random()*26)+97);
+            str = str + c;
+            i++;
+        }
+        return str;
+    }
     public static void quicksort(int[] arr, int left, int right)
     {
         if (left < right)
@@ -116,7 +128,26 @@ public class SortingAlg
 
     public static int median(int [] arr)
     {
+        if (arr.length % 2 == 0)
+        {
+            int middleArr = (arr.length / 2) - 1;
+            return ((arr[middleArr] + arr[middleArr + 1]) / 2);
+        }
+        else
+        {
+            int middle = (arr.length/2) - 1;
+            return (arr[middle]);
+        }
+    }
 
+    public static int ArrIdx(String[] arr, String query)
+    {
+        for (int i = 0; i < arr.length - 1; i++)
+        {
+            if (arr[i].equals(query))
+                return i;
+        }
+        return -1;
     }
 }
 
