@@ -80,14 +80,14 @@ public class SortingAlg
         return i + 1;
     }
 
-    public static void quicksort(String[] arr, int left, int right)
+    public static void quicksortString(String[] arr, int left, int right)
     {
         if (left < right)
         {
             int pivot = partition(arr,left,right);
 
-            quicksort(arr,left,pivot - 1);
-            quicksort(arr,pivot + 1, right);
+            quicksortString(arr,left,pivot - 1);
+            quicksortString(arr,pivot + 1, right);
         }
     }
 
