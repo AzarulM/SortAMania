@@ -8,7 +8,7 @@ public class Team17SortCompetition extends SortCompetition
 
     public int challengeTwo(String[] arr, String query);
     {
-        SortingAlg.quicksort(arr, 0, arr.length - 1);
+        SortingAlg.quicksortString(arr, 0, arr.length - 1);
         return (SortingAlg.ArrIdx(arr, query));
     }
 
