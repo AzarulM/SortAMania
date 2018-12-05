@@ -19,11 +19,21 @@ public class Runner {
         System.out.println("Sorted");
         SortingAlg.printArr(randIntArr);
 
+
+        /********************************************************************/
+
         long time2 = System.currentTimeMillis();
         String randString2 = SortingAlg.randomString(5);
-        int idx2 = team17.challengeTwo(randomStringArr, );
+        int idx2 = team17.challengeTwo(randomStringArr, randString2);
         time2 = System.currentTimeMillis() - time2;
         System.out.println("Challenge Two Time Taken: " + time2 * 0.001 + " Seconds");
         System.out.println("Position of '" + randString2 + "' : " + idx2);
+
+
+        /********************************************************************/
+
+
+
+
     }
 }
