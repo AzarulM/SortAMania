@@ -20,12 +20,12 @@ public class Team17SortCompetition extends SortCompetition
 
     public int challengeFour(int[][] arr);
     {
-
+            return null;
     }
 
     public int challengeFive(Comparable[] arr, Comparable query);
     {
-
+            return null;
     }
 
     public String greeting()
